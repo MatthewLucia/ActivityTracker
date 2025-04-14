@@ -9,7 +9,7 @@ import MainLayout from './layouts/MainLayout';
 import ActivityList from './pages/ActivityList';
 import AddActivity from './pages/AddActivity';
 import Home from './pages/Home';
-import UserList from './pages/UserList';
+import UserList from './pages/UserList'; // Import UserList
 
 function App() {
     return (
