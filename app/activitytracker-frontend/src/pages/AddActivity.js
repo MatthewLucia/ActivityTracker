@@ -57,7 +57,6 @@ const AddActivity = () => {
 
         // Send to API
         fetch('http://localhost:8080/api/v1/activity', {
-            credentials: "include",
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

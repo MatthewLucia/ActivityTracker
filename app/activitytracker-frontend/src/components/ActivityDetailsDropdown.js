@@ -29,9 +29,7 @@ const ActivityDetailsDropdown = ({ activityId }) => {
         const url = `http://localhost:8080/api/v1/activity/${activityId}`;
         console.log(`Fetching from URL: ${url}`);
 
-        fetch(url, {
-            credentials: "include"
-        })
+        fetch(url)
             .then(response => {
                 console.log(`Response status: ${response.status}`);
                 if (!response.ok) {

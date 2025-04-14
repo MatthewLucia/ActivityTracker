@@ -10,9 +10,7 @@ function ActivityList() {
 
     useEffect(() => {
         setLoading(true);
-        fetch('http://localhost:8080/api/v1/activity', {
-            credentials: "include"
-        })
+        fetch('http://localhost:8080/api/v1/activity')
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Network response was not ok: ${response.status}`);
