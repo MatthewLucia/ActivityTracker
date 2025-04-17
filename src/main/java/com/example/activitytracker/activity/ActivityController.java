@@ -39,6 +39,7 @@ public class ActivityController {
         Optional<Activity> activityOpt = activityService.getActivityById(activityId);
         if (activityOpt.isPresent()) {
             ActivityResponseDto dto = new ActivityResponseDto(activityOpt.get());
+            return new ResponseEntity<>(dto, HttpStatus.OK);
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
